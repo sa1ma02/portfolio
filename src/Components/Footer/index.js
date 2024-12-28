@@ -99,7 +99,6 @@ function Footer() {
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href="mailto:salmabaalli20@gmail.com" target="display"><EmailIcon /></SocialMediaIcon>
-          {/* <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon> */}
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           
         </SocialMediaIcons>

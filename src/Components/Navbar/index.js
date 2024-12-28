@@ -5,7 +5,8 @@ import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { useTheme } from "styled-components";
 import { Bio } from "../../data/constants";
-
+import { Link } from "react-router-dom";
+import { Typography } from "@mui/material";
 const Nav = styled.nav`
 background: ${({theme}) => theme.card_light};
 height: 80px;
@@ -44,17 +45,17 @@ align-items: center;
 `;
 
 const MobileIcon = styled.div`
-display: none;
-@media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 50%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: ${({theme}) => theme.text_primary};
-}
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 20px; /* Ajuste la position si nécessaire */
+        right: 20px;
+        transform: translate(-100%, 50%);
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: ${({theme}) => theme.text_primary};
+    }
 `;
 
 const NavItems = styled.ul`
@@ -130,7 +131,7 @@ const MobileMenu = styled.div`
     justify-content: center;
     gap: 16px;
     position: absolute;
-    top: 80;
+    top: 80px;
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
@@ -196,47 +197,76 @@ const Navbar = () => {
                     </ButtonContainer>
             </NavContainer>
 
-            {
-                open && (
-                    <MobileMenu open={open}>
-                        <MobileMenuLinks href="#about" 
-                        onClick= {
-                            () => setOpen(!open)  }>
-                                About 
-                        </MobileMenuLinks>
-                        <MobileMenuLinks href="#skills" 
-                        onClick= {
-                            () => setOpen(!open)
-                        }>Skills
-                        </MobileMenuLinks>
-                        <MobileMenuLinks href="#experience" 
-                        onClick= {
-                            () => setOpen(!open)
-                        }>Experience
-                        </MobileMenuLinks>
-                        <MobileMenuLinks href="#projects" 
-                        onClick= {
-                            () => setOpen(!open)
-                        }>Projects
-                        </MobileMenuLinks>
-                        <MobileMenuLinks href="/education" 
-                        onClick= {
-                            () => setOpen(!open)
-                        }>
-                        Education</MobileMenuLinks>
-
-                        <GitHubButton 
-                            style={{
-                                padding: "10px 16px",
-                                background: `${theme.primary}`,
-                                color: "white",
-                                width: "max-content",
-                            }}
-                            href="/"
-                            target="_blank"
-                        >
-                            Github Profile
-                            </GitHubButton>
+            {open && (
+                <MobileMenu open={open}>
+                    <Typography
+                        component="a"
+                        href="#about"
+                        onClick={() => setOpen(false)}
+                        style={{
+                            color: theme.text_primary,
+                            fontWeight: "500",
+                            textDecoration: "none",
+                            transition: "all 0.2s ease-in-out",
+                        }}
+                    >
+                        About
+                    </Typography>
+                    <Typography
+                        component="a"
+                        href="#skills"
+                        onClick={() => setOpen(false)}
+                        style={{
+                            color: theme.text_primary,
+                            fontWeight: "500",
+                            textDecoration: "none",
+                            transition: "all 0.2s ease-in-out",
+                        }}
+                    >
+                        Skills
+                    </Typography>
+                    <Typography
+                        component="a"
+                        href="#experience"
+                        onClick={() => setOpen(false)}
+                        style={{
+                            color: theme.text_primary,
+                            fontWeight: "500",
+                            textDecoration: "none",
+                            transition: "all 0.2s ease-in-out",
+                        }}
+                    >
+                        Experience
+                    </Typography>
+                    <Typography
+                        component="a"
+                        href="#projects"
+                        onClick={() => setOpen(false)}
+                        style={{
+                            color: theme.text_primary,
+                            fontWeight: "500",
+                            textDecoration: "none",
+                            transition: "all 0.2s ease-in-out",
+                        }}
+                    >
+                        Projects
+                    </Typography>
+                    <Typography
+                        component="a"
+                        href="#education"
+                        onClick={() => setOpen(false)}
+                        style={{
+                            color: theme.text_primary,
+                            fontWeight: "500",
+                            textDecoration: "none",
+                            transition: "all 0.2s ease-in-out",
+                        }}
+                    >
+                        Education
+                    </Typography>
+                    <GitHubButton href={Bio.github} target="_blank">
+                        Github Profile
+                    </GitHubButton>
                     </MobileMenu>
                 )
             }

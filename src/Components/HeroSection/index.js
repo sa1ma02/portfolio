@@ -140,19 +140,34 @@ const Span = styled.span`
 
 const SubTitle = styled.div`
     font-size: 20px;
-    color : ${({theme}) => theme.text_primary+95};
+    color: ${({ theme }) => theme.text_primary + "95"};
     margin-bottom: 42px;
-    text-align: justify; 
+    text-align: justify;
+    line-height: 1.6;
+    max-width: 600px; /* Limite la largeur maximale */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word; /* Gère les longs mots ou chaînes sans espace */
+    word-wrap: break-word; /* Support supplémentaire pour les anciens navigateurs */
+    word-break: break-word;
 
-    @media screen and (max-width : 960px){
-        text-align: center;
+    @media screen and (max-width: 960px) {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.4;
+        max-width: 450px; /* Réduction pour les écrans moyens */
     }
 
-    @media screen and (max-width : 640x){
+    @media screen and (max-width: 640px) {
         font-size: 16px;
-        line-height: 32px;
+        line-height: 1.4;
+        text-align: justify;
+        margin-bottom: 24px;
+        padding: 0 75px; /* Ajout de marges internes pour un meilleur espacement */
+        max-width: 100%; /* S'adapte à l'écran */
     }
 `;
+
 
 const ResumeButton = styled.a`
      -webkit-appearance: button;

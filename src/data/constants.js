@@ -20,7 +20,7 @@ export const Bio = {
     github: "https://github.com/sa1ma02",
     resume:
       "https://drive.google.com/file/d/1XhtNxidu3av9-2gf5dYsyAU1Q4zH4zzI/view?usp=sharing",
-    linkedin: "www.linkedin.com/in/salma-baalli",
+    linkedin: "https://www.linkedin.com/in/salma-baalli",
     facebook: "/",
   };
   
