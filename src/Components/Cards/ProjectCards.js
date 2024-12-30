@@ -102,9 +102,10 @@ const Description = styled.div`
     margin-top: 8px;
     display: -webkit-box;
     max-width: 100%;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+    align-items:justify;
 `;
 
 const Members = styled.div`

@@ -213,114 +213,97 @@ export const Bio = {
   
   export const projects = [
     {
-      id: 9,
-      title: "Expenses Tracker App",
-      date: "March 2024 ",
-      description:
-        "Expenses Tracker is a user-friendly web application designed to help individuals and businesses manage and track their expenses effectively. It allows users to log, categorize, and view their expenses with ease. The app provides detailed reports and analytics to monitor spending habits and stay on top of financial goals. With secure login for both employees and admins, the platform ensures smooth and efficient expense management for organizations and individuals alike",
-      image:
-        budgettracker,
-      tags: [
-        "SpringBoot",
-        "React Js",
-        "PostgreSQL",
-        "Axios",
-      ],
-      category: "web app",
-      github: "https://github.com/sa1ma02/expense-tracker",
-      webapp: "",
+        id: 9,
+        title: "Expenses Tracker App",
+        date: "March 2024",
+        description:
+            "A web app to track expenses, log entries, and view detailed analytics for effective financial management.",
+        image: budgettracker,
+        tags: ["SpringBoot", "React Js", "PostgreSQL", "Axios"],
+        category: "web app",
+        github: "https://github.com/sa1ma02/expense-tracker",
+        webapp: "",
     },
     {
-      id: 0,
-      title: "Ecommerce application",
-      date: "March 2023 - June 2023",
-      description:
-        "Developed a full-stack ecommerce web application that allows users to browse products, add them to their cart, and complete purchases with ease. Integrated secure user authentication, enabling users to sign up, log in, and manage their profiles. The app features a responsive and intuitive UI built with React JS, ensuring a seamless shopping experience across devices. Utilized Spring Boot for backend services and Node.js for efficient handling of product listings and transactions. Focused on optimizing performance, security, and user experience throughout development",
-      image: ecommercebg,
-      tags: ["React Js", "Springboot", "Node Js", "Redux", "Bootstrap", "Material UI", "JWT"],
-      category: "web app",
-      github: "https://github.com/sa1ma02/e-commerce",
-      webapp: "",
-      member: [
-      
-      ],
+        id: 0,
+        title: "Ecommerce Application",
+        date: "March 2023 - June 2023",
+        description:
+            "A full-stack ecommerce app with user authentication, responsive UI, and secure transaction handling.",
+        image: ecommercebg,
+        tags: [
+            "React Js",
+            "Springboot",
+            "Node Js",
+            "Redux",
+            "Bootstrap",
+            "Material UI",
+            "JWT",
+        ],
+        category: "web app",
+        github: "https://github.com/sa1ma02/e-commerce",
+        webapp: "",
+        member: [],
     },
     {
-      id: 2,
-      title: "Vehicle fleet management",
-      date: "Jul 2024 - Aug 2024",
-      description:
-        "Developed a vehicle fleet management application to track and manage a fleet of vehicles. Implemented features such as vehicle maintenance scheduling, fuel tracking, and real-time monitoring of vehicle status. Built with React for the frontend and Spring Boot for the backend to ensure a scalable and efficient solution",
-      image:
-        fleetbg,
-      tags: ["React Js", "Springboot", "Node Js", "Redux", "Bootstrap", "Material UI", "JWT"],
-      category: "Web app",
-      github: "https://github.com/sa1ma02/gestion-flotte-automobile",
-      webapp: "",
-      member: [
-       
-      ],
+        id: 2,
+        title: "Vehicle Fleet Management",
+        date: "Jul 2024 - Aug 2024",
+        description:
+            "An app for managing vehicle fleets with features like maintenance scheduling and real-time monitoring.",
+        image: fleetbg,
+        tags: ["React Js", "Springboot", "Node Js", "Redux", "Bootstrap", "Material UI", "JWT"],
+        category: "web app",
+        github: "https://github.com/sa1ma02/gestion-flotte-automobile",
+        webapp: "",
+        member: [],
     },
     {
-      id: 1,
-      title: "Notes app",
-      date: "Dec 2024",
-      description:
-        "Built the Notes app using React JS and Material-UI, allowing users to create, manage, and organize notes. The backend is powered by JSON Server for simple data storage and retrieval. The app provides a smooth, responsive experience with features like note creation, editing, and deletion",
-      image:notesbg,
-      tags: [
-        "React Js",
-        "Mui",
-        "JSON-server"
-       
-      ],
-      category: "web app",
-      github: "https://github.com/sa1ma02/notesApp",
-      webapp: "",
-    },
- 
-    {
-      id: 3,
-      title: "Tetris Game",
-      date: "Dec 2022 ",
-      description:
-        "Developed a classic Tetris game using pure JavaScript. The game features smooth controls, dynamic level progression, and real-time gameplay, offering an engaging and nostalgic experience for players",
-      image:
-        tetrisbg,
-      tags: ["JavaScript", "HTML"],
-      category: "",
-      github: "https://github.com/sa1ma02/tetrisGame",
-      webapp: "",
+        id: 1,
+        title: "Notes App",
+        date: "Dec 2024",
+        description:
+            "A React-based app to create, edit, and manage notes with a JSON Server backend.",
+        image: notesbg,
+        tags: ["React Js", "Mui", "JSON-server"],
+        category: "web app",
+        github: "https://github.com/sa1ma02/notesApp",
+        webapp: "",
     },
     {
-      id: 10,
-      title: "Flappy Bird",
-      date: "Apr 2023",
-      description:
-        "Created a Flappy Bird clone using Java, implementing smooth physics, collision detection, and dynamic difficulty. The game features intuitive controls and an engaging, fast-paced experience for players",
-      image:
-        fbbg,
-      tags: ["Java"],
-      category: "",
-      github: "https://github.com/sa1ma02/flappyBird",
-      webapp: "",
+        id: 3,
+        title: "Tetris Game",
+        date: "Dec 2022",
+        description:
+            "A classic Tetris game with smooth controls and dynamic gameplay using JavaScript.",
+        image: tetrisbg,
+        tags: ["JavaScript", "HTML"],
+        category: "",
+        github: "https://github.com/sa1ma02/tetrisGame",
+        webapp: "",
     },
     {
-      id: 10,
-      title: "Online shop backend using Microservices",
-      date: "Dec 2024",
-      description: "Developed the backend for an online shopping platform using a microservices architecture. The project leveraged technologies like Spring Boot and Docker for service orchestration and scalability. Each microservice was responsible for core functionalities such as user authentication, product management, order processing, and payment integration. Implemented robust API communication using REST, ensured fault tolerance, and optimized the system for seamless deployment and maintenance.",
-
-      image:
-        microserv,
-      tags: ["Spring Boot, Microservices"],
-      category: "",
-      github: "https://github.com/sa1ma02/microservices_onlineShop",
-      webapp: "",
+        id: 10,
+        title: "Flappy Bird",
+        date: "Apr 2023",
+        description:
+            "A Flappy Bird clone built in Java, featuring smooth physics and dynamic difficulty.",
+        image: fbbg,
+        tags: ["Java"],
+        category: "",
+        github: "https://github.com/sa1ma02/flappyBird",
+        webapp: "",
     },
-    
-   
-
-
-  ];
-  
+    {
+        id: 10,
+        title: "Online Shop Backend with Microservices",
+        date: "Dec 2024",
+        description:
+            "Backend for an online shop using microservices for user authentication, order management, and payments.",
+        image: microserv,
+        tags: ["Spring Boot, Microservices"],
+        category: "",
+        github: "https://github.com/sa1ma02/microservices_onlineShop",
+        webapp: "",
+    },
+];
