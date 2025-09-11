@@ -29,7 +29,7 @@ const Title = styled.h1`
     font-weight: 600;
     text-align: center;
     margin-top: 12px;
-    color:${({theme}) => theme.text_primary};
+    color:${({theme}) => theme.primary};
 
     @media (max-width: 768px) {
         margin-top: 12px;
@@ -62,7 +62,7 @@ const Skill = styled.div`
     width: 100%;
     max-width: 500px;
     bachground-color: ${({theme}) => theme.card};
-    border: 0.1px solid #854CE6;
+    border: 0.1px solid ${({theme}) => theme.primary};
     border-radius: 16px;
     padding: 18px 36px;
 
@@ -96,7 +96,7 @@ const SkillItem = styled.div`
     font-size: 16px;
     color: ${({theme}) => theme.text_primary+80};
     border-radius: 12px;
-    border: 1px solid ${({theme}) => theme.text_primary+80};
+    border: 1px solid ${({theme}) => theme.primary+80};
     padding: 12px 16px;
     font-weight: 400;
 

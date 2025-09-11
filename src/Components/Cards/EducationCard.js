@@ -64,7 +64,7 @@ const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid #854CE6;
+    border: 0.1px solid #306EE8;
 `
 
 const Top = styled.div`
@@ -139,7 +139,7 @@ const EducationCard = ({ education }) => {
                     <Date>{education.date}</Date>
                 </Body>
             </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
+            <Grade><b>Major : </b>{education.grade}</Grade>
             <Description>
                 <Span>{education.desc}</Span>
             </Description>

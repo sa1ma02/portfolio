@@ -8,7 +8,7 @@ import { Bio } from "../../data/constants";
 import { Link } from "react-router-dom";
 import { Typography } from "@mui/material";
 const Nav = styled.nav`
-background: ${({theme}) => theme.card_light};
+background: ${({theme}) => theme.nav_bg};
 height: 80px;
 display: flex;
 justify-content: center;
@@ -173,7 +173,7 @@ const Navbar = () => {
                         style={{
                             display:"flex",
                             alignItems: "center",
-                            color: "white",
+                            color: theme.primary,
                             marginBottom: "20",
                             cursor: "pointer",
 
@@ -189,8 +189,9 @@ const Navbar = () => {
                         <NavLink href="#about">About</NavLink>
                         <NavLink href="#skills">Skills</NavLink>
                         <NavLink href="#experience">Experience</NavLink>
-                        <NavLink href="#projects">Projects</NavLink>
                         <NavLink href="#education">Education</NavLink>
+                        <NavLink href="#projects">Projects</NavLink>
+                        
                     </NavItems>
                     <ButtonContainer>
                     <GitHubButton href={Bio.github} target="display">Github Profile</GitHubButton>

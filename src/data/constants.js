@@ -166,7 +166,7 @@ export const Bio = {
       id: 1,
       img: "https://lh3.googleusercontent.com/proxy/zVKRpe9z8zhSZuM8JFrnj0XJcL6W8TalpUpxeUODNbryXXO8_0K5khBoxbiJIAZYjpbBfQxfjcS_gsqGpteIgMwVuJ6WLURZ6wKIK1BWpJDqilyIpccP",
       school: "Preparatory Classes for Engineering Schools, Laayoune",
-      date: "2020 - Apr 2022",
+      date: "2020 - 2022",
       grade: "Mathematics & Physics",
       desc: "I studuied in preparatory classes for engineering schools at Laayoune. I have taken courses in Mathematics, Physics, and Computer Science.",
       degree: "Mathematics and Physics",

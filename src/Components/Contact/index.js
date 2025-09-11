@@ -36,7 +36,7 @@ font-size: 42px;
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.primary};
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
@@ -108,10 +108,11 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+background: #BFD4EA;
+background: linear-gradient(225deg, #BFD4EA 0%, #2563EB 30%, #1E3A8A 100%);
+background: -moz-linear-gradient(225deg, #BFD4EA 0%, #2563EB 30%, #1E3A8A 100%);
+background: -webkit-linear-gradient(225deg, #BFD4EA 0%, #2563EB 30%, #1E3A8A 100%);
+
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;

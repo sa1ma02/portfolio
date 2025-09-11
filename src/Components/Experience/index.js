@@ -43,7 +43,7 @@ font-size: 42px;
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.primary};
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
@@ -88,8 +88,11 @@ const index = () => {
                         {experiences.map((experience,index) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    <TimelineDot variant="outlined"  sx={{
+    color: '#152B6C', // your blue shade for outlined border
+    borderColor: '#152B6C', // ensures the border uses your blue
+  }} />
+                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#1E3A8A' }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <ExperienceCard experience={experience}/>
