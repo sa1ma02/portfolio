@@ -5,6 +5,7 @@ import tetrisbg from "../images/tetrisbg.PNG"
 import fbbg from "../images/fbbg.PNG"
 import budgettracker from "../images/budgettracker.PNG"
 import microserv from "../images/microserv.webp"
+import researchbg from "../images/ai-assistant.png"
 
 
 export const Bio = {
@@ -175,6 +176,8 @@ export const Bio = {
   ];
   
   export const projects = [
+  
+
     {
       id: 10,
       title: "Online Shop Backend with Microservices",
@@ -182,11 +185,23 @@ export const Bio = {
       description:
           "Backend for an online shop using microservices for user authentication, order management, and payments.",
       image: microserv,
-      tags: ["Spring Boot, Microservices"],
+      tags: ["Spring Boot", "Microservices"],
       category: "",
       github: "https://github.com/sa1ma02/microservices_onlineShop",
       webapp: "",
   },
+    {
+  id: 11,
+  title: "Research Assistant Extension",
+  date: "Oct 2024",
+  description:
+      "Chrome extension with Spring Boot backend to summarize webpage text using Gemini API and save research notes locally.",
+  image: researchbg, 
+  tags: ["Spring Boot", "JavaScript", "WebFlux", "Chrome Extension", "Gemini API"],
+  category: "web app",
+  github: "https://github.com/sa1ma02/research-assistant",
+  webapp: "",
+},
   {
     id: 0,
     title: "Ecommerce Application",
