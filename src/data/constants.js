@@ -20,7 +20,7 @@ export const Bio = {
       "A software engineer with a passion for both backend and frontend technologies. Specializing in backend development with Java and Spring Boot, I also enjoy crafting seamless user experiences through frontend work. With a growth mindset and a commitment to high-quality results, I strive to make meaningful contributions to every project.",
     github: "https://github.com/sa1ma02",
     resume:
-      "https://drive.google.com/file/d/1s7-l3taTg5bNTG5sPl5PK-buCcFKc-1-/view?usp=sharing",
+      "https://drive.google.com/file/d/1Gwinvmg3OAbK8hJh2BDwhn3_24IclXM8/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/salma-baalli",
     
   };
